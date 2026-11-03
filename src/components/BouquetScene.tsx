@@ -6,7 +6,7 @@ import * as THREE from 'three';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import FlowerBouquet3D from './FlowerBouquet3D';
-import { usePageVisible, useReducedMotion } from './hooks/useReducedMotion';
+import { usePageVisible, useReducedMotion } from '@/hooks/useReducedMotion';
 export function BouquetFallback({ loading = false }: { loading?: boolean }) {return <div className="bouquet-fallback"><span>✿</span><p>{loading ? 'Gathering a little love…' : 'A bouquet of love, just for you'}</p><small>{loading ? 'Every petal, a reason I choose you.' : 'Some things bloom beyond the screen. ♡'}</small></div>;}
 class CanvasBoundary extends Component<{children: React.ReactNode}, {failed:boolean}>{state={failed:false}; static getDerivedStateFromError(){return {failed:true};} render(){return this.state.failed?<BouquetFallback/>:this.props.children;}}
 function AnimatedBouquet({ progress, reduced, drag }: { progress: React.RefObject<number>; reduced: boolean; drag: React.RefObject<number> }) {
