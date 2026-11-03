@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/jaylord_victorio/Downloads/onethree/node_modules/next/src/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.ts"],"sourcesContent":["module.exports = (\n  require('../../module.compiled') as typeof import('../../module.compiled')\n).vendored['react-rsc']!.ReactJsxDevRuntime\n"],"names":["module","exports","require","vendored","ReactJsxDevRuntime"],"mappings":"AAAAA,OAAOC,OAAO,GACZC,QAAQ,4HACRC,QAAQ,CAAC,YAAY,CAAEC,kBAAkB","ignoreList":[0]}},
-    {"offset": {"line": 9, "column": 0}, "map": {"version":3,"sources":["file:///Users/jaylord_victorio/Downloads/onethree/src/app/layout.tsx"],"sourcesContent":["import type { Metadata } from 'next';\nimport './globals.css';\nexport const metadata: Metadata = { title: '15 Months of Us ♡', description: 'A little corner of the universe, just for you. One year, three months, and a lifetime still to come.' };\nexport default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) { return <html lang=\"en\"><body>{children}</body></html>; }\n"],"names":["metadata","title","description","RootLayout","children","lang"],"mappings":";;;;;;;;;AAEO,MAAMA,WAAqB;IAAEC,OAAO;IAAqBC,aAAa;AAAuG;AACrK,SAASC,WAAW,EAAEC,QAAQ,EAA2C;IAAI,qBAAO,8OAAC;QAAKC,MAAK;kBAAK,cAAA,8OAAC;sBAAMD;;;;;;;;;;;AAAyB"}}]
-}
