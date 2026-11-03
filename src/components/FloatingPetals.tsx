@@ -1,0 +1,1 @@
+export default function FloatingPetals(){return <div className="floating-petals" aria-hidden="true">{Array.from({length:8},(_,i)=><i key={i} style={{left:`${i*13+3}%`,animationDelay:`${-i*3}s`,animationDuration:`${18+i*2}s`}}/>)}</div>;}
