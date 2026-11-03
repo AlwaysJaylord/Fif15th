@@ -1,3 +1,3 @@
-import { site } from '@/content/site';
+import { site } from './content/site';
 import Reveal from './Reveal';
 export default function RomanticMessage(){return <section id="our-story" className="message-section section"><Reveal><p className="eyebrow">02 / MY FAVORITE CHAPTER</p><span className="ornament" aria-hidden="true">❦</span><h2>{site.messageHeading}<span className="small-heart">♡</span></h2><p className="message-copy">{site.message}</p></Reveal><div className="milestones">{[{value:'1',label:'Year'},{value:'3',label:'Months'},{value:'∞',label:'Reasons to Love You'}].map((item,i)=><Reveal key={item.label} delay={i*.13}><div className="milestone"><span>{item.value}</span><p>{i===2?'Countless ':''}{item.label}</p></div></Reveal>)}</div><Reveal><p className="handwritten">and I would choose you, in every lifetime.</p></Reveal></section>;}

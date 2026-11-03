@@ -1,8 +1,8 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
 import { Heart, MoveUpRight } from 'lucide-react';
-import { site } from '@/content/site';
-import { useReducedMotion } from '@/hooks/useReducedMotion';
+import { site } from './content/site';
+import { useReducedMotion } from './hooks/useReducedMotion';
 import Reveal from './Reveal';
 import LoveLetter from './LoveLetter';
 export default function LoveEnvelope(){const [opening,setOpening]=useState(false);const [open,setOpen]=useState(false);const timer=useRef<ReturnType<typeof setTimeout>|null>(null);const reduced=useReducedMotion();useEffect(()=>()=>{if(timer.current)clearTimeout(timer.current);},[]);

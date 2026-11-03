@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useRef } from 'react';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
-import { memories } from '@/content/memories';
+import { memories } from './content/memories';
 import Modal from './Modal';
 import MemoryArtwork from './MemoryArtwork';
 export default function PhotoLightbox({index,setIndex,onClose}:{index:number;setIndex:(index:number)=>void;onClose:()=>void}){const start=useRef<{x:number;y:number}|null>(null);const memory=memories[index];

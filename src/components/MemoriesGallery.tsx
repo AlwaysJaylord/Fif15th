@@ -1,8 +1,8 @@
 'use client';
 import { useState } from 'react';
 import { Expand } from 'lucide-react';
-import { memories } from '@/content/memories';
-import { site } from '@/content/site';
+import { memories } from './content/memories';
+import { site } from './content/site';
 import Reveal from './Reveal';
 import MemoryArtwork from './MemoryArtwork';
 import PhotoLightbox from './PhotoLightbox';
